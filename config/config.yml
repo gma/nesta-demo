@@ -1,8 +1,8 @@
 # Title and subheading for your site. Used on the home page and in page
 # titles.
 #
-title: "My Site"
-subtitle: "(change this text in config/config.yml)"
+title: "Nesta Content Demo"
+subtitle: "A brief overview of how to create content in Nesta"
 
 # If you want to set the descrition or keywords meta tags on your site's
 # home page, do it here.
@@ -48,7 +48,7 @@ cache: false
 #     your actual content and the (optional) menu.txt file that links to your
 #     main category pages.
 #
-content: content
+content: content-demo
 
 # google_analytics_code
 #     Set this if you want Google Analytics to track traffic on your site.
