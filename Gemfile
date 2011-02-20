@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'nesta', '0.9.1'
+gem 'nesta', '0.9.4'
 gem 'heroku'
 
 
