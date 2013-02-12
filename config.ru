@@ -3,7 +3,11 @@ require 'bundler/setup'
 
 Bundler.require(:default)
 
-require 'nesta/app'
+use Rack::ConditionalGet
+use Rack::ETag
 
-Nesta::App.root = ::File.expand_path('.', ::File.dirname(__FILE__))
+require 'nesta/env'
+Nesta::Env.root = ::File.expand_path('.', ::File.dirname(__FILE__))
+
+require 'nesta/app'
 run Nesta::App
