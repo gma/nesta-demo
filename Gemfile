@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
+ruby '2.1.1'
 
-gem 'nesta', '0.9.13'
+gem 'nesta'
 
 
-# gem (RUBY_VERSION =~ /^1.9/) ? 'ruby-debug19': 'ruby-debug'
+# gem 'debugger'
