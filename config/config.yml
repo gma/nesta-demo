@@ -71,3 +71,8 @@ content: content-demo
 #   cache: true    
 #   content: /var/apps/nesta/shared/content
 #   google_analytics_code: "UA-???????-?"
+
+build:
+  domain: demo.nestacms.com
+  templated_assets:
+    - /css/master.css
