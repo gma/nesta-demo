@@ -1,8 +1,25 @@
+GIT
+  remote: https://github.com/gma/nesta.git
+  revision: 35886cbc13e4de57b8c344d2e2e8148a603810fb
+  branch: static-site-generator
+  specs:
+    nesta (0.13.0)
+      RedCloth (~> 4.2)
+      haml (>= 3.1, < 6.0)
+      haml-contrib (>= 1.0)
+      rack (~> 2)
+      rake
+      rdiscount (~> 2.1)
+      sass-embedded (~> 1.58)
+      sinatra (~> 2.0)
+      tilt (~> 2.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
     RedCloth (4.3.2)
     ffi (1.15.5)
+    google-protobuf (3.22.2)
     haml (5.2.2)
       temple (>= 0.8.0)
       tilt
@@ -20,19 +37,11 @@ GEM
       unicorn (>= 4.5)
     mustermann (2.0.2)
       ruby2_keywords (~> 0.0.1)
-    nesta (0.13.0)
-      RedCloth (~> 4.2)
-      haml (>= 3.1, < 6.0)
-      haml-contrib (>= 1.0)
-      rack (~> 2.0)
-      rdiscount (~> 2.1)
-      sassc (>= 2.2)
-      sinatra (~> 2.0)
-      tilt (~> 2.0)
-    rack (2.2.4)
-    rack-protection (2.2.2)
+    rack (2.2.6.4)
+    rack-protection (2.2.4)
       rack
     raindrops (0.20.0)
+    rake (13.0.6)
     rb-fsevent (0.11.2)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
@@ -40,15 +49,16 @@ GEM
       ffi (>= 0.5.0)
     rdiscount (2.2.7)
     ruby2_keywords (0.0.5)
-    sassc (2.4.0)
-      ffi (~> 1.9)
-    sinatra (2.2.2)
+    sass-embedded (1.59.3)
+      google-protobuf (~> 3.21)
+      rake (>= 10.0.0)
+    sinatra (2.2.4)
       mustermann (~> 2.0)
       rack (~> 2.2)
-      rack-protection (= 2.2.2)
+      rack-protection (= 2.2.4)
       tilt (~> 2.0)
-    temple (0.9.1)
-    tilt (2.0.11)
+    temple (0.10.0)
+    tilt (2.1.0)
     unicorn (6.1.0)
       kgio (~> 2.6)
       raindrops (~> 0.7)
@@ -59,7 +69,7 @@ PLATFORMS
 DEPENDENCIES
   haml-contrib
   mr-sparkle
-  nesta
+  nesta!
 
 BUNDLED WITH
    2.3.22
