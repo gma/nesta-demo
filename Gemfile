@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 File.read('.ruby-version').chomp
 
-gem 'nesta', git: 'https://github.com/gma/nesta.git', branch: 'static-site-generator'
+gem 'nesta'
 gem 'haml-contrib'
 
 group :development do
