@@ -1,10 +1,27 @@
+GIT
+  remote: https://github.com/gma/nesta.git
+  revision: bac99c9ca5c8df4aff3c54e47309c98b0e184314
+  specs:
+    nesta (0.16.0)
+      RedCloth (~> 4.2)
+      haml (>= 3.1, < 6.0)
+      haml-contrib (>= 1.0)
+      rack (~> 3)
+      rake
+      rdiscount (~> 2.1)
+      sass-embedded (~> 1.58)
+      sinatra (~> 4.0)
+      tilt (~> 2.1)
+
 GEM
   remote: http://rubygems.org/
   specs:
     RedCloth (4.3.4)
     base64 (0.2.0)
+    bigdecimal (3.1.8)
     ffi (1.15.5)
-    google-protobuf (4.26.1)
+    google-protobuf (4.28.3)
+      bigdecimal
       rake (>= 13)
     haml (5.2.2)
       temple (>= 0.8.0)
@@ -21,22 +38,14 @@ GEM
       rb-fsevent (>= 0.9)
       rb-inotify (>= 0.8)
       unicorn (>= 4.5)
-    mustermann (3.0.0)
+    mustermann (3.0.3)
       ruby2_keywords (~> 0.0.1)
-    nesta (0.16.0)
-      RedCloth (~> 4.2)
-      haml (>= 3.1, < 6.0)
-      haml-contrib (>= 1.0)
-      rack (~> 2)
-      rake
-      rdiscount (~> 2.1)
-      sass-embedded (~> 1.58)
-      sinatra (~> 3.1)
-      tilt (~> 2.1)
-    rack (2.2.9)
-    rack-protection (3.2.0)
+    rack (3.1.8)
+    rack-protection (4.0.0)
       base64 (>= 0.1.0)
-      rack (~> 2.2, >= 2.2.4)
+      rack (>= 3.0.0, < 4)
+    rack-session (2.0.0)
+      rack (>= 3.0.0)
     raindrops (0.20.0)
     rake (13.2.1)
     rb-fsevent (0.11.2)
@@ -46,16 +55,17 @@ GEM
       ffi (>= 0.5.0)
     rdiscount (2.2.7.3)
     ruby2_keywords (0.0.5)
-    sass-embedded (1.75.0)
-      google-protobuf (>= 3.25, < 5.0)
-      rake (>= 13.0.0)
-    sinatra (3.2.0)
+    sass-embedded (1.80.6)
+      google-protobuf (~> 4.28)
+      rake (>= 13)
+    sinatra (4.0.0)
       mustermann (~> 3.0)
-      rack (~> 2.2, >= 2.2.4)
-      rack-protection (= 3.2.0)
+      rack (>= 3.0.0, < 4)
+      rack-protection (= 4.0.0)
+      rack-session (>= 2.0.0, < 3)
       tilt (~> 2.0)
     temple (0.10.3)
-    tilt (2.3.0)
+    tilt (2.4.0)
     unicorn (6.1.0)
       kgio (~> 2.6)
       raindrops (~> 0.7)
@@ -66,7 +76,7 @@ PLATFORMS
 DEPENDENCIES
   haml-contrib
   mr-sparkle
-  nesta
+  nesta!
 
 BUNDLED WITH
    2.5.9
